@@ -16,6 +16,8 @@
 		FEA468A02837411700D6AF8D /* DestiniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA4689F2837411700D6AF8D /* DestiniTests.swift */; };
 		FEA468AA2837411700D6AF8D /* DestiniUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA468A92837411700D6AF8D /* DestiniUITests.swift */; };
 		FEA468AC2837411700D6AF8D /* DestiniUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA468AB2837411700D6AF8D /* DestiniUITestsLaunchTests.swift */; };
+		FEC9F76528374B1B00608C4E /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC9F76428374B1B00608C4E /* Story.swift */; };
+		FEC9F76728374B2D00608C4E /* StoryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC9F76628374B2D00608C4E /* StoryBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		FEA468A52837411700D6AF8D /* DestiniUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DestiniUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA468A92837411700D6AF8D /* DestiniUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestiniUITests.swift; sourceTree = "<group>"; };
 		FEA468AB2837411700D6AF8D /* DestiniUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestiniUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FEC9F76428374B1B00608C4E /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		FEC9F76628374B2D00608C4E /* StoryBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +105,9 @@
 			children = (
 				FEA468882837411100D6AF8D /* AppDelegate.swift */,
 				FEA4688A2837411100D6AF8D /* SceneDelegate.swift */,
-				FEA4688C2837411100D6AF8D /* ViewController.swift */,
-				FEA4688E2837411100D6AF8D /* Main.storyboard */,
+				FEA468BA2837415000D6AF8D /* Model */,
+				FEA468B82837413400D6AF8D /* View */,
+				FEA468B92837414400D6AF8D /* Controller */,
 				FEA468912837411700D6AF8D /* Assets.xcassets */,
 				FEA468932837411700D6AF8D /* LaunchScreen.storyboard */,
 				FEA468962837411700D6AF8D /* Info.plist */,
@@ -125,6 +130,31 @@
 				FEA468AB2837411700D6AF8D /* DestiniUITestsLaunchTests.swift */,
 			);
 			path = DestiniUITests;
+			sourceTree = "<group>";
+		};
+		FEA468B82837413400D6AF8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FEA4688E2837411100D6AF8D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FEA468B92837414400D6AF8D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FEA4688C2837411100D6AF8D /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FEA468BA2837415000D6AF8D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FEC9F76428374B1B00608C4E /* Story.swift */,
+				FEC9F76628374B2D00608C4E /* StoryBrain.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEC9F76728374B2D00608C4E /* StoryBrain.swift in Sources */,
 				FEA4688D2837411100D6AF8D /* ViewController.swift in Sources */,
 				FEA468892837411100D6AF8D /* AppDelegate.swift in Sources */,
 				FEA4688B2837411100D6AF8D /* SceneDelegate.swift in Sources */,
+				FEC9F76528374B1B00608C4E /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
