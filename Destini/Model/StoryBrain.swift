@@ -48,12 +48,5 @@ struct StoryBrain{
         }else {
             currentStoryNumber = stories[currentStoryNumber].choice2Destination
         }
-                
-        if currentStoryNumber >= stories.count {
-            currentStoryNumber = 0
-        }
     }
-    
-    
-    
 }
